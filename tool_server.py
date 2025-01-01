@@ -4,7 +4,7 @@ import functions
 app = Flask(__name__)
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/tool_server', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         input_text = request.form['input_text']
